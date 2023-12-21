@@ -1,0 +1,965 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>720003741.69228196</real>
+		<key>CustomIconData</key>
+		<string>KMEP-GenericApplication-/Applications/DEVONthink 3.app</string>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionUID</key>
+						<integer>12583465</integer>
+						<key>KeyCode</key>
+						<integer>8</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>256</integer>
+						<key>ReleaseAll</key>
+						<false/>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>12583466</integer>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>%SystemClipboard%</string>
+						<key>Variable</key>
+						<string>localOrigin</string>
+						<key>Where</key>
+						<string>Append</string>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>12583467</integer>
+						<key>DisplayKind</key>
+						<string>Clipboard</string>
+						<key>HonourFailureSettings</key>
+						<true/>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>IncludedVariables</key>
+						<array>
+							<string>9999</string>
+						</array>
+						<key>MacroActionType</key>
+						<string>ExecuteJavaScriptForAutomation</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>// Script Under from [Minja](https://github.com/BlackwinMin)
+
+var app = Application('System Events');
+app.includeStandardAdditions = true;
+var input = app.theClipboard();
+
+var reg0 = /[\r\n]{1}/g;
+var reg = /\s/g;
+var reg2 = /;/g;
+var reg3 = /,/g;
+var reg4 = /:/g;
+var reg4a = /\(/g;
+var reg4b = /\)/g;
+var result = input.replace(reg0,"");
+var result = result.replace(reg,"");
+var result = result.replace(reg2,"；");
+var result = result.replace(reg3,"，");
+var result = result.replace(reg4,"：");
+var result = result.replace(reg4a,"（");
+result.replace(reg4b,"）");</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseModernSyntax</key>
+						<false/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>12583468</integer>
+						<key>DeviceID</key>
+						<string>SOUNDEFFECTS</string>
+						<key>MacroActionType</key>
+						<string>PlaySound</string>
+						<key>Path</key>
+						<string>/System/Library/Sounds/Purr.aiff</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>722761563.40896904</real>
+				<key>CustomIconData</key>
+				<string>KMEP-ClipboardAction</string>
+				<key>ModificationDate</key>
+				<real>724819197.67319798</real>
+				<key>Name</key>
+				<string>Copy Text from PDF</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>8</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>2304</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>D9680D5F-7553-4048-81E4-E6369C6CB94D</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>@DEVONthink(Add) </string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.devon-technologies.think3</string>
+					<key>Name</key>
+					<string>DEVONthink 3</string>
+					<key>NewFile</key>
+					<string>/Applications/DEVONthink 3.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>F6962C3A-6F65-4514-A08E-479FA900A4A3</string>
+		<key>UID</key>
+		<string>7E17C58D-C285-4AC9-8601-E25B6E29ACF0</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>720003741.69228196</real>
+		<key>CustomIconData</key>
+		<string>KMEP-GenericApplication-/Applications/DEVONthink 3.app</string>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionUID</key>
+						<integer>64786</integer>
+						<key>MacroActionType</key>
+						<string>SelectMenuItem</string>
+						<key>Menu</key>
+						<array>
+							<string>Edit</string>
+							<string>Copy Page Link</string>
+						</array>
+						<key>TargetApplication</key>
+						<dict>
+							<key>BundleIdentifier</key>
+							<string>com.devon-technologies.think3</string>
+							<key>Name</key>
+							<string>DEVONthink 3</string>
+							<key>NewFile</key>
+							<string>/Applications/DEVONthink 3.app</string>
+						</dict>
+						<key>TargetingType</key>
+						<string>Specific</string>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>12592691</integer>
+						<key>DeviceID</key>
+						<string>SOUNDEFFECTS</string>
+						<key>MacroActionType</key>
+						<string>PlaySound</string>
+						<key>Path</key>
+						<string>/System/Library/Sounds/Purr.aiff</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>698726102.87038696</real>
+				<key>CustomIconData</key>
+				<string>KMEP-ClipboardAction</string>
+				<key>ModificationDate</key>
+				<real>724818995.36772299</real>
+				<key>Name</key>
+				<string>Copy Page Link</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>8</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>2304</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>78C805BE-806C-4094-AD20-9161C6C6CD9A</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>@DEVONthink(Add) </string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.devon-technologies.think3</string>
+					<key>Name</key>
+					<string>DEVONthink 3</string>
+					<key>NewFile</key>
+					<string>/Applications/DEVONthink 3.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>F6962C3A-6F65-4514-A08E-479FA900A4A3</string>
+		<key>UID</key>
+		<string>7E17C58D-C285-4AC9-8601-E25B6E29ACF0</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>720003741.69228196</real>
+		<key>CustomIconData</key>
+		<string>KMEP-GenericApplication-/Applications/DEVONthink 3.app</string>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionUID</key>
+						<integer>65921</integer>
+						<key>MacroActionType</key>
+						<string>SelectMenuItem</string>
+						<key>Menu</key>
+						<array>
+							<string>Edit</string>
+							<string>Copy Page Link</string>
+						</array>
+						<key>TargetApplication</key>
+						<dict>
+							<key>BundleIdentifier</key>
+							<string>com.devon-technologies.think3</string>
+							<key>Name</key>
+							<string>DEVONthink 3</string>
+							<key>NewFile</key>
+							<string>/Applications/DEVONthink 3.app</string>
+						</dict>
+						<key>TargetingType</key>
+						<string>Specific</string>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>65920</integer>
+						<key>DisplayKind</key>
+						<string>Variable</string>
+						<key>HonourFailureSettings</key>
+						<true/>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>IncludedVariables</key>
+						<array>
+							<string>9999</string>
+						</array>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>tell application "System Events"	set frontmostProcess to first process where it is frontmost	set frontmostAppName to name of frontmostProcessend tellif frontmostAppName is "DEVONthink 3" then	tell application "DEVONthink 3"		set frontWindow to front window		set currentItem to content record of frontWindow		set currentName to name of currentItem	end tellend if</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+						<key>Variable</key>
+						<string>ItemName</string>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>65922</integer>
+						<key>JustDisplay</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SetClipboardToText</string>
+						<key>StyledText</key>
+						<data>
+						cnRmZAAAAAADAAAAAgAAAAcAAABU
+						WFQucnRmAQAAAC7hAQAAKwAAAAEA
+						AADZAQAAe1xydGYxXGFuc2lcYW5z
+						aWNwZzkzNlxjb2NvYXJ0ZjI3MDgK
+						XGNvY29hdGV4dHNjYWxpbmcwXGNv
+						Y29hcGxhdGZvcm0we1xmb250dGJs
+						XGYwXGZuaWxcZmNoYXJzZXQxMzQg
+						UGluZ0ZhbmdTQy1SZWd1bGFyO1xm
+						MVxmbmlsXGZjaGFyc2V0MCBIZWx2
+						ZXRpY2FOZXVlO30Ke1xjb2xvcnRi
+						bDtccmVkMjU1XGdyZWVuMjU1XGJs
+						dWUyNTU7XHJlZDBcZ3JlZW4wXGJs
+						dWUwO30Ke1wqXGV4cGFuZGVkY29s
+						b3J0Ymw7O1xjc3NyZ2JcYzBcYzBc
+						YzBcYzg0NzA2XGNuYW1lIGNvbnRy
+						b2xUZXh0Q29sb3I7fQpccGFyZFx0
+						eDU2MFx0eDExMjBcdHgxNjgwXHR4
+						MjI0MFx0eDI4MDBcdHgzMzYwXHR4
+						MzkyMFx0eDQ0ODBcdHg1MDQwXHR4
+						NTYwMFx0eDYxNjBcdHg2NzIwXHBh
+						cmRpcm5hdHVyYWxccGFydGlnaHRl
+						bmZhY3RvcjAKClxmMFxmczI2IFxj
+						ZjIgWwpcZjEgJVZhcmlhYmxlJUl0
+						ZW1OYW1lJQpcZjAgXQpcZjEgKCVT
+						eXN0ZW1DbGlwYm9hcmQlKX0BAAAA
+						IwAAAAEAAAAHAAAAVFhULnJ0ZhAA
+						AABdpApktgEAAAAAAAAAAAAA
+						</data>
+						<key>Text</key>
+						<string>[%Variable%ItemName%](%SystemClipboard%)</string>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>12592689</integer>
+						<key>DeviceID</key>
+						<string>SOUNDEFFECTS</string>
+						<key>MacroActionType</key>
+						<string>PlaySound</string>
+						<key>Path</key>
+						<string>/System/Library/Sounds/Purr.aiff</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>700110504.17761695</real>
+				<key>CustomIconData</key>
+				<string>KMEP-ClipboardAction</string>
+				<key>ModificationDate</key>
+				<real>724818965.35739601</real>
+				<key>Name</key>
+				<string>Copy MD Link of Page Link</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>8</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>2304</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>3A1699F4-2EFC-4939-A025-1628BC06E114</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>@DEVONthink(Add) </string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.devon-technologies.think3</string>
+					<key>Name</key>
+					<string>DEVONthink 3</string>
+					<key>NewFile</key>
+					<string>/Applications/DEVONthink 3.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>F6962C3A-6F65-4514-A08E-479FA900A4A3</string>
+		<key>UID</key>
+		<string>7E17C58D-C285-4AC9-8601-E25B6E29ACF0</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>720003741.69228196</real>
+		<key>CustomIconData</key>
+		<string>KMEP-GenericApplication-/Applications/DEVONthink 3.app</string>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionUID</key>
+						<integer>73371</integer>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>HonourFailureSettings</key>
+						<true/>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>IncludedVariables</key>
+						<array>
+							<string>9999</string>
+						</array>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>-- 获取DEVONthink中当前选中文本tell application "System Events"	tell process "DEVONthink 3"		set frontmost to true		keystroke "c" using {command down}		delay 0.2 -- 等待复制操作完成	end tellend tellset theText to the clipboard-- 获取文本的前十五个字符并转换为url编码-- 将字符串分割为文本项set oldDelims to AppleScript's text item delimitersset AppleScript's text item delimiters to ""set textItems to text items of theTextset AppleScript's text item delimiters to oldDelims-- 获取前十五个字符的文本项set firstTenItems to items 1 through 15 of textItems-- 将文本项合并为新字符串set urlString to firstTenItems as string-- 将汉字转换为UTF-8编码set utf8Text to do shell script "echo " &amp; quoted form of urlString &amp; " | iconv -t utf-8"-- 使用Python脚本将UTF-8编码转换为URL编码set command to "python3 -c 'import urllib.parse; import sys; print(urllib.parse.quote(sys.argv[1], safe=\"\"))' " &amp; quoted form of utf8Textset urlEncodedText to do shell script command-- 获取itemlinktell application "DEVONthink 3"	set frontWindow to front window	set currentItem to content record of frontWindow	set itemLink to reference URL of currentItemend tellset outputString to itemLink &amp; "?search=" &amp; urlEncodedTextset oldClipboard to the clipboardset the clipboard to outputString</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>12592690</integer>
+						<key>DeviceID</key>
+						<string>SOUNDEFFECTS</string>
+						<key>MacroActionType</key>
+						<string>PlaySound</string>
+						<key>Path</key>
+						<string>/System/Library/Sounds/Purr.aiff</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>705830920.52804899</real>
+				<key>CustomIconData</key>
+				<string>KMEP-ClipboardAction</string>
+				<key>ModificationDate</key>
+				<real>724818978.46705604</real>
+				<key>Name</key>
+				<string>Copy MD Link of Selection Link</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>8</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>2304</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>EF12CB97-4734-4285-90D6-9808DADED405</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>@DEVONthink(Add) </string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.devon-technologies.think3</string>
+					<key>Name</key>
+					<string>DEVONthink 3</string>
+					<key>NewFile</key>
+					<string>/Applications/DEVONthink 3.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>F6962C3A-6F65-4514-A08E-479FA900A4A3</string>
+		<key>UID</key>
+		<string>7E17C58D-C285-4AC9-8601-E25B6E29ACF0</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>720003741.69228196</real>
+		<key>CustomIconData</key>
+		<string>KMEP-GenericApplication-/Applications/DEVONthink 3.app</string>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionUID</key>
+						<integer>67429</integer>
+						<key>DisplayKind</key>
+						<string>Variable</string>
+						<key>HonourFailureSettings</key>
+						<true/>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>IncludedVariables</key>
+						<array>
+							<string>9999</string>
+						</array>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>tell application "DEVONthink 3"	set frontWindow to front window	try		set currentItem to content record of frontWindow		set currentName to name of currentItem		set currentItemlink to reference URL of currentItem		set output to ("[" &amp; currentName &amp; "](" &amp; currentItemlink &amp; ")") as string	on error		set currentSelection to selection of frontWindow		if the (count of currentSelection) &gt; 1 then			set itemlinklist to {}			set nameList to {}			set mdlinkList to {}						repeat with this_record in currentSelection				set the end of itemlinklist to (reference URL of this_record as string)				set the end of nameList to (name of this_record as string)			end repeat						repeat with t from 1 to the count of nameList				set the end of mdlinkList to ("- [" &amp; (item t of nameList) &amp; "](" &amp; (item t of itemlinklist) &amp; ")")			end repeat						set old_delim to AppleScript's text item delimiters			set AppleScript's text item delimiters to return			set output to mdlinkList as string			set AppleScript's text item delimiters to old_delim					else			set currentName to name of item 1 of currentSelection			set currentItemlink to reference URL of item 1 of currentSelection			set output to ("[" &amp; currentName &amp; "](" &amp; currentItemlink &amp; ")") as string		end if			end tryend tellset the clipboard to output</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+						<key>Variable</key>
+						<string>ItemName</string>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>12592685</integer>
+						<key>DeviceID</key>
+						<string>SOUNDEFFECTS</string>
+						<key>MacroActionType</key>
+						<string>PlaySound</string>
+						<key>Path</key>
+						<string>/System/Library/Sounds/Purr.aiff</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>701140386.77285898</real>
+				<key>CustomIconData</key>
+				<string>KMEP-ClipboardAction</string>
+				<key>ModificationDate</key>
+				<real>724817455.11175799</real>
+				<key>Name</key>
+				<string>Copy MD Link of Item Links</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>8</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>2304</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>606B0E66-0EFE-4663-AD80-08DDEDD4D18E</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>@DEVONthink(Add) </string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.devon-technologies.think3</string>
+					<key>Name</key>
+					<string>DEVONthink 3</string>
+					<key>NewFile</key>
+					<string>/Applications/DEVONthink 3.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>F6962C3A-6F65-4514-A08E-479FA900A4A3</string>
+		<key>UID</key>
+		<string>7E17C58D-C285-4AC9-8601-E25B6E29ACF0</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>720003741.69228196</real>
+		<key>CustomIconData</key>
+		<string>KMEP-GenericApplication-/Applications/DEVONthink 3.app</string>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionUID</key>
+						<integer>65924</integer>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>HonourFailureSettings</key>
+						<true/>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>IncludedVariables</key>
+						<array>
+							<string>9999</string>
+						</array>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>tell application "DEVONthink 3"	set frontWindow to front window	set currentItem to content record of frontWindow	set currentName to name of currentItemend tell
+
+set the clipboard to currentName</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>12592687</integer>
+						<key>DeviceID</key>
+						<string>SOUNDEFFECTS</string>
+						<key>MacroActionType</key>
+						<string>PlaySound</string>
+						<key>Path</key>
+						<string>/System/Library/Sounds/Purr.aiff</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>700291413.26574194</real>
+				<key>CustomIconData</key>
+				<string>KMEP-ClipboardAction</string>
+				<key>ModificationDate</key>
+				<real>724818185.74104404</real>
+				<key>Name</key>
+				<string>Copy Name of Item</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>8</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>2304</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>7A257373-3652-4E2A-82F7-1023EE5388C7</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>@DEVONthink(Add) </string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.devon-technologies.think3</string>
+					<key>Name</key>
+					<string>DEVONthink 3</string>
+					<key>NewFile</key>
+					<string>/Applications/DEVONthink 3.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>F6962C3A-6F65-4514-A08E-479FA900A4A3</string>
+		<key>UID</key>
+		<string>7E17C58D-C285-4AC9-8601-E25B6E29ACF0</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>720003741.69228196</real>
+		<key>CustomIconData</key>
+		<string>KMEP-GenericApplication-/Applications/DEVONthink 3.app</string>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionUID</key>
+						<integer>12592678</integer>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>HonourFailureSettings</key>
+						<true/>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>IncludedVariables</key>
+						<array>
+							<string>9999</string>
+						</array>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>tell application "DEVONthink 3"
+	set frontWindow to front window
+	try
+		set currentItem to content record of frontWindow
+		set currentName to name of currentItem
+		set currentURL to URL of currentItem
+		set output to ("[" &amp; currentName &amp; "](" &amp; currentURL &amp; ")") as string
+	on error
+		set currentSelection to selection of frontWindow
+		if the (count of currentSelection) &gt; 1 then
+			set URLList to {}
+			set nameList to {}
+			set mdlinkList to {}
+			
+			repeat with this_record in currentSelection
+				set the end of URLList to (URL of this_record as string)
+				set the end of nameList to (name of this_record as string)
+			end repeat
+			
+			repeat with t from 1 to the count of nameList
+				set the end of mdlinkList to ("- [" &amp; (item t of nameList) &amp; "](" &amp; (item t of URLList) &amp; ")")
+			end repeat
+			
+			set old_delim to AppleScript's text item delimiters
+			set AppleScript's text item delimiters to return
+			set output to mdlinkList as string
+			set AppleScript's text item delimiters to old_delim
+			
+		else
+			set currentName to name of item 1 of currentSelection
+			set currentURL to URL of item 1 of currentSelection
+			set output to ("[" &amp; currentName &amp; "](" &amp; currentURL &amp; ")") as string
+		end if
+		
+	end try
+end tell
+
+set the clipboard to output</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>12592686</integer>
+						<key>DeviceID</key>
+						<string>SOUNDEFFECTS</string>
+						<key>MacroActionType</key>
+						<string>PlaySound</string>
+						<key>Path</key>
+						<string>/System/Library/Sounds/Purr.aiff</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>724815830.33909404</real>
+				<key>CustomIconData</key>
+				<string>KMEP-ClipboardAction</string>
+				<key>ModificationDate</key>
+				<real>724817937.17738199</real>
+				<key>Name</key>
+				<string>Copy MD Link of URLs</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>8</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>2304</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>972CE910-A189-409B-973C-E6C1A441760F</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>@DEVONthink(Add) </string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.devon-technologies.think3</string>
+					<key>Name</key>
+					<string>DEVONthink 3</string>
+					<key>NewFile</key>
+					<string>/Applications/DEVONthink 3.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>F6962C3A-6F65-4514-A08E-479FA900A4A3</string>
+		<key>UID</key>
+		<string>7E17C58D-C285-4AC9-8601-E25B6E29ACF0</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>720003741.69228196</real>
+		<key>CustomIconData</key>
+		<string>KMEP-GenericApplication-/Applications/DEVONthink 3.app</string>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionUID</key>
+						<integer>76410</integer>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>HonourFailureSettings</key>
+						<true/>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>IncludedVariables</key>
+						<array>
+							<string>9999</string>
+						</array>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>-- 获取DEVONthink中当前选中文本tell application "System Events"	keystroke "c" using {command down}	delay 0.2 -- 等待复制操作完成end tellset theText to the clipboard-- 获取文本的前十五个字符并转换为url编码-- 将字符串分割为文本项set oldDelims to AppleScript's text item delimitersset AppleScript's text item delimiters to ""set textItems to text items of theTextset AppleScript's text item delimiters to oldDelims-- 获取前十五个字符的文本项set firstTenItems to items 1 through 15 of textItems-- 将文本项合并为新字符串set urlString to firstTenItems as string-- 将汉字转换为UTF-8编码set utf8Text to do shell script "echo " &amp; quoted form of urlString &amp; " | iconv -t utf-8"-- 使用Python脚本进行URL编码set command to "python3 -c 'import urllib.parse; import sys; print(urllib.parse.quote(sys.argv[1], safe=\"\"))' " &amp; quoted form of utf8Textset urlEncodedText to do shell script command-- 获取itemlink和itemnametell application "DEVONthink 3"	set frontWindow to front window	set currentItem to content record of frontWindow	set itemName to name of currentItem	set itemLink to reference URL of currentItemend tell-- 生成sectionLinkset sectionLink to itemLink &amp; "?search=" &amp; urlEncodedText-- 将文本与链接结合if theText starts with "第" then	set pythonScript to "import re
+original_text = '''" &amp; theText &amp; "'''
+modified_text = re.sub(r'(第([\\u4e00-\\u9fa5]+)条)', r'[\\1](" &amp; sectionLink &amp; ")', original_text)
+print(modified_text)"	set ouputText to do shell script "python3 -c " &amp; quoted form of pythonScriptelse	set ouputText to theText &amp; "[](" &amp; sectionLink &amp; ")"end ifset outputString to "&gt;《" &amp; itemName &amp; "》" &amp; ouputTextset oldClipboard to the clipboardset the clipboard to outputString</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>12592688</integer>
+						<key>DeviceID</key>
+						<string>SOUNDEFFECTS</string>
+						<key>MacroActionType</key>
+						<string>PlaySound</string>
+						<key>Path</key>
+						<string>/System/Library/Sounds/Purr.aiff</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>707924477.73399305</real>
+				<key>CustomIconData</key>
+				<string>KMEP-ClipboardAction</string>
+				<key>ModificationDate</key>
+				<real>724818960.71082604</real>
+				<key>Name</key>
+				<string>Copy Lex</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>8</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>2304</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>008F8ED4-5CE9-456D-BFD2-23FD561907F1</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>@DEVONthink(Add) </string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.devon-technologies.think3</string>
+					<key>Name</key>
+					<string>DEVONthink 3</string>
+					<key>NewFile</key>
+					<string>/Applications/DEVONthink 3.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>F6962C3A-6F65-4514-A08E-479FA900A4A3</string>
+		<key>UID</key>
+		<string>7E17C58D-C285-4AC9-8601-E25B6E29ACF0</string>
+	</dict>
+</array>
+</plist>
